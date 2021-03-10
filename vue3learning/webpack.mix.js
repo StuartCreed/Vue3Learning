@@ -11,8 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js').vue()
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ])
-    .browserSync('http://localhost:8081/')
+mix.js('resources/js/app.js', 'public/js').vue();
+    // .postCss('resources/css/app.css', 'public/css', [
+    //     //
+    // ])
+mix.browserSync('http://localhost:8081/')
