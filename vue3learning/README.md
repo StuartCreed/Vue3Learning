@@ -7,6 +7,7 @@ Laravel v8 (with Sail and BrowserSync), VueJS v3 with Vue Loader boilerplate.
     <li>npm install</li>
     <li>npm install</li>
     <li>./vendor/bin/sail up</li>
+    <li>npm run watch</li>
 </ul>
 
 <u>Extra Info - Sail config</u><br/>
