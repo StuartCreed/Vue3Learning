@@ -12,6 +12,6 @@ export default {
 
 <style scoped>
     .testing {
-        color: blue
+        color: var(--theme-color-one);
     }
 </style>

@@ -1,6 +1,8 @@
 <template>
-    <Header></Header>
-    <Footer></Footer>
+    <section class="app">
+        <Header></Header>
+        <Footer></Footer>
+    </section>
 </template>
 
 <script>
@@ -13,4 +15,8 @@ export default {
 </script>
 
 <style scoped>
+    .app {
+        --theme-color-one: pink;
+        --theme-color-two: orange;
+    }
 </style>
