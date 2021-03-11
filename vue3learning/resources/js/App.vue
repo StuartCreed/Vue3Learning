@@ -9,7 +9,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 export default {
-    name: "app.vue",
+    name: "App.vue",
     components: {Header, Footer}
 }
 </script>
