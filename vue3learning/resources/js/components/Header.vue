@@ -1,5 +1,5 @@
 <template>
-    <div class="testing">
+    <div class="testing bg-green-500" >
         Vue 3, with Vue Loader and Laravel 8 (with Sail)
     </div>
 </template>
