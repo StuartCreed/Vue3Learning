@@ -1,13 +1,22 @@
 <template>
-    <div class="testing bg-green-500" >
-        Vue 3, with Vue Loader and Laravel 8 (with Sail)
-    </div>
+    <ul class="testing bg-green-500 flex justify-evenly align-middle">
+        <li v-for="item in items">{{ item }}</li>
+    </ul>
 </template>
 
 <script>
 export default {
-    name: "Header"
+    data() {
+        return {
+            items: {
+                first: 'banana',
+                second: 'apple',
+                third: 'orange'
+            }
+        }
+    }
 }
+
 </script>
 
 <style scoped>
