@@ -11,7 +11,6 @@
 <script>
     export default {
         props: ['subHeader', 'activeTitle'],
-        emits: ['titleClick'],
         methods: {
             isActive: function(title) {
                 return title === this.activeTitle
