@@ -20,7 +20,7 @@ export default {
                     titles: ['BritBox', 'Login']
                 }
             },
-            activeTitle: ''
+            activeTitle: null // Dynamically set once mounted
         }
     },
     methods: {

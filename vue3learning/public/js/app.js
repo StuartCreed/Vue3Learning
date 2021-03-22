@@ -16448,7 +16448,8 @@ __webpack_require__.r(__webpack_exports__);
           titles: ['BritBox', 'Login']
         }
       },
-      activeTitle: ''
+      activeTitle: null // Dynamically set once mounted
+
     };
   },
   methods: {
