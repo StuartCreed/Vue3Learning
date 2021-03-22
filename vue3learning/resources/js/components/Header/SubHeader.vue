@@ -1,8 +1,8 @@
 <template>
     <section>
         <ul class="flex">
-            <li v-for="link in links" class="p-2">
-                {{ link }}
+            <li v-for="title in titles" class="p-2">
+                {{ title }}
             </li>
         </ul>
     </section>
@@ -10,6 +10,6 @@
 
 <script>
     export default {
-        props: ['links']
+        props: ['titles']
     }
 </script>
