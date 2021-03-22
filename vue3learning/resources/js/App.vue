@@ -21,5 +21,6 @@ export default {
     .app {
         --theme-color-one: pink;
         --theme-color-two: orange;
+        --active: olive
     }
 </style>

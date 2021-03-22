@@ -1,6 +1,6 @@
 <template>
     <section class="flex justify-between p-3 mr-32 ml-32">
-        <SubHeader v-for="subHeader in subHeaders" :titles="subHeader.titles"></SubHeader>
+        <SubHeader v-for="subHeader in subHeaders" :subHeader="subHeader" :activeTitle="activeTitle" @titleClick="titleClick"></SubHeader>
     </section>
 </template>
 
@@ -14,12 +14,18 @@ export default {
         return {
             subHeaders: {
                 subHeader1: {
-                    titles: ['Watch Live', 'Full Series', 'Shows', 'Categories' , 'News']
+                    titles: ['Watch Live', 'Full Series', 'Shows', 'Categories' , 'News'],
                 },
                 subHeader2: {
                     titles: ['BritBox', 'Login']
                 }
-            }
+            },
+            activeTitle: 'Watch Live'
+        }
+    },
+    methods: {
+        titleClick: function(title) {
+            return this.activeTitle = title;
         }
     }
 }
