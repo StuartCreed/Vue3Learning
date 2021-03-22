@@ -1,7 +1,6 @@
 <template>
     <section class="flex justify-between p-3 mr-32 ml-32">
-        <SubHeader :links="subHeader1Links"></SubHeader>
-        <SubHeader :links="subHeader2Links"></SubHeader>
+        <SubHeader v-for="subHeader in links" :links="subHeader"></SubHeader>
     </section>
 </template>
 
@@ -13,9 +12,12 @@ export default {
     },
     data() {
         return {
-            subHeader1Links: ['Watch Live', 'Full Series', 'Shows', 'Categories' , 'News'],
-            subHeader2Links: ['BritBox', 'Login']
+            links: {
+                subHeader1: ['Watch Live', 'Full Series', 'Shows', 'Categories' , 'News'],
+                subHeader2: ['BritBox', 'Login']
+            }
         }
     }
 }
 </script>
+K

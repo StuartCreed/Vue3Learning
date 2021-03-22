@@ -16440,8 +16440,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      subHeader1Links: ['Watch Live', 'Full Series', 'Shows', 'Categories', 'News'],
-      subHeader2Links: ['BritBox', 'Login']
+      links: {
+        subHeader1: ['Watch Live', 'Full Series', 'Shows', 'Categories', 'News'],
+        subHeader2: ['BritBox', 'Login']
+      }
     };
   }
 });
@@ -16567,15 +16569,15 @@ var _hoisted_1 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_SubHeader = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SubHeader");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SubHeader, {
-    links: $data.subHeader1Links
-  }, null, 8
-  /* PROPS */
-  , ["links"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SubHeader, {
-    links: $data.subHeader2Links
-  }, null, 8
-  /* PROPS */
-  , ["links"])]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("section", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.links, function (subHeader) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_SubHeader, {
+      links: subHeader
+    }, null, 8
+    /* PROPS */
+    , ["links"]);
+  }), 256
+  /* UNKEYED_FRAGMENT */
+  ))]);
 }
 
 /***/ }),
