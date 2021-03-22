@@ -20,13 +20,16 @@ export default {
                     titles: ['BritBox', 'Login']
                 }
             },
-            activeTitle: 'Watch Live'
+            activeTitle: ''
         }
     },
     methods: {
         titleClick: function(title) {
             return this.activeTitle = title;
         }
+    },
+    mounted() {
+        this.activeTitle = this.subHeaders.subHeader1.titles[0];
     }
 }
 </script>

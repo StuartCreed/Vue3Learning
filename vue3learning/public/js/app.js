@@ -16448,13 +16448,16 @@ __webpack_require__.r(__webpack_exports__);
           titles: ['BritBox', 'Login']
         }
       },
-      activeTitle: 'Watch Live'
+      activeTitle: ''
     };
   },
   methods: {
     titleClick: function titleClick(title) {
       return this.activeTitle = title;
     }
+  },
+  mounted: function mounted() {
+    this.activeTitle = this.subHeaders.subHeader1.titles[0];
   }
 });
 
